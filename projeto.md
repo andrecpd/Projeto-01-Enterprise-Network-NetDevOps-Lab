@@ -1,51 +1,69 @@
-# Enterprise Network & NetDevOps Lab
+# 🚀 Enterprise Network & NetDevOps Lab
 
-![Network](https://img.shields.io/badge/Network-Engineering-blue)
-![NetDevOps](https://img.shields.io/badge/NetDevOps-Automation-green)
-![Ansible](https://img.shields.io/badge/Ansible-Automation-red)
-![Python](https://img.shields.io/badge/Python-Automation-yellow)
+![Network Engineering](https://img.shields.io/badge/Network-Engineering-blue)
+![NetDevOps](https://img.shields.io/badge/NetDevOps-Automação-green)
+![Ansible](https://img.shields.io/badge/Ansible-Automação-red)
+![Python](https://img.shields.io/badge/Python-Automação-yellow)
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
-![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
+![GitHub](https://img.shields.io/badge/GitHub-Versionamento-black)
 
-## 📌 About the Project
+## 📌 Sobre o Projeto
 
-This repository contains a professional **Enterprise Network & NetDevOps laboratory**, designed to simulate a real-world corporate network environment.
+Este repositório apresenta um **laboratório completo de Redes Corporativas e NetDevOps**, desenvolvido para simular uma infraestrutura Enterprise real.
 
-The project integrates **network engineering, cybersecurity, SD-WAN, routing, switching, automation, monitoring and Infrastructure as Code**, providing a practical environment for designing, implementing, testing and documenting network solutions.
+O projeto integra conceitos de:
 
-The laboratory is designed to be deployed using platforms such as **PNETLab, EVE-NG or GNS3**.
+* Engenharia de Redes
+* Routing e Switching
+* Segurança de Redes
+* Firewall
+* SD-WAN
+* MPLS
+* Automação
+* NetDevOps
+* Infrastructure as Code
+* Monitoramento
+* Cloud Networking
 
----
-
-## 🎯 Project Objectives
-
-The main objectives are:
-
-* Design an enterprise network architecture.
-* Implement routing and switching technologies.
-* Configure dynamic routing protocols.
-* Implement network segmentation using VLANs and VRFs.
-* Implement BGP and OSPF.
-* Simulate MPLS environments.
-* Implement SD-WAN and IPsec VPN.
-* Configure enterprise firewalls.
-* Automate network operations.
-* Apply Infrastructure as Code concepts.
-* Implement monitoring and observability.
-* Apply Git and GitHub for infrastructure version control.
-* Implement NetDevOps and CI/CD concepts.
-* Document the entire infrastructure.
+O laboratório será desenvolvido utilizando plataformas como **PNETLab, EVE-NG ou GNS3**, permitindo reproduzir os cenários em um ambiente controlado.
 
 ---
 
-# 🏗️ Network Architecture
+# 🎯 Objetivos
+
+O principal objetivo deste projeto é desenvolver e documentar uma infraestrutura corporativa completa, aplicando boas práticas de engenharia de redes.
+
+### Objetivos técnicos
+
+* Projetar uma arquitetura Enterprise.
+* Implementar VLANs e segmentação de rede.
+* Implementar Routing e Switching.
+* Configurar OSPF.
+* Configurar BGP.
+* Implementar VRF.
+* Estudar e implementar MPLS.
+* Implementar VPN IPsec.
+* Implementar SD-WAN.
+* Configurar firewalls.
+* Implementar políticas de segurança.
+* Automatizar tarefas utilizando Ansible.
+* Desenvolver scripts utilizando Python.
+* Utilizar Terraform para Infrastructure as Code.
+* Implementar monitoramento com Zabbix e Grafana.
+* Utilizar Git e GitHub para controle de versões.
+* Aplicar conceitos de NetDevOps e CI/CD.
+* Documentar toda a infraestrutura.
+
+---
+
+# 🏗️ Arquitetura da Rede
 
 ```text
                               INTERNET
                                   |
-                             +---------+
-                             |   ISP   |
-                             +----+----+
+                            +-----------+
+                            |    ISP    |
+                            +-----+-----+
                                   |
                            +------+------+
                            |  FIREWALL  |
@@ -53,30 +71,30 @@ The main objectives are:
                            | Palo Alto  |
                            +------+------+
                                   |
-                    +-------------+-------------+
-                    |                           |
-                +---+---+                   +---+---+
-                | CORE1 |===================| CORE2 |
-                +---+---+       OSPF        +---+---+
-                    |                           |
-                    |                           |
-              +-----+-----+               +-----+-----+
-              |    DATA   |               |    HQ     |
-              |   CENTER  |               |   USERS   |
-              +-----+-----+               +-----+-----+
-                    |                           |
-                Servers                     SD-WAN
+                   +--------------+--------------+
+                   |                             |
+              +----+----+                   +----+----+
+              |  CORE1  |===================|  CORE2  |
+              +----+----+       OSPF        +----+----+
+                   |                             |
+                   |                             |
+              +----+----+                   +----+----+
+              |   DATA   |                   |    HQ    |
+              |  CENTER  |                   |  USERS   |
+              +----+----+                   +----+----+
+                   |                             |
+               SERVIDORES                     SD-WAN
                                                 |
                               +-----------------+----------------+
                               |                                  |
                          +----+----+                        +----+----+
-                         |BRANCH01 |                        |BRANCH02 |
+                         |FILIAL 01|                        |FILIAL 02|
                          +---------+                        +---------+
 ```
 
 ---
 
-# 🌐 Technologies
+# 🌐 Tecnologias
 
 ## Routing
 
@@ -85,8 +103,8 @@ The main objectives are:
 * OSPF
 * BGP
 * VRF
-* Route Redistribution
-* Routing Policies
+* Redistribuição de rotas
+* Políticas de roteamento
 
 ## Switching
 
@@ -95,49 +113,52 @@ The main objectives are:
 * STP
 * EtherChannel
 * Inter-VLAN Routing
-* Layer 2 / Layer 3 Switching
+* Switching Layer 2
+* Switching Layer 3
 
 ## WAN
 
 * MPLS
 * IPsec
 * SD-WAN
-* WAN Failover
-* Routing Policies
+* Failover
 * QoS
+* Políticas de roteamento
 
-## Security
+## Segurança
 
 * FortiGate
 * Palo Alto
 * Firewall Policies
 * NAT
 * VPN
-* Network Segmentation
+* Segmentação
 * Hardening
-* Least Privilege
-* Security Zones
+* Controle de acesso
+* Princípio do menor privilégio
 
-## Automation
+## Automação
 
 * Git
 * GitHub
 * Ansible
 * Python
 * Terraform
-* REST APIs
+* APIs
 * Infrastructure as Code
 * CI/CD
+* NetDevOps
 
-## Monitoring
+## Monitoramento
 
 * Zabbix
 * Grafana
 * SNMP
 * Syslog
-* Network Telemetry
+* ICMP
+* Telemetria
 
-## Lab Platforms
+## Plataformas de Laboratório
 
 * PNETLab
 * EVE-NG
@@ -145,231 +166,330 @@ The main objectives are:
 
 ---
 
-# 📊 IP Addressing Plan
+# 📊 Plano de Endereçamento
 
-| Segment   | Network         | Purpose                |
-| --------- | --------------- | ---------------------- |
-| VLAN 10   | 10.10.10.0/24   | Management             |
-| VLAN 20   | 10.10.20.0/24   | Users                  |
-| VLAN 30   | 10.10.30.0/24   | Servers                |
-| VLAN 40   | 10.10.40.0/24   | Voice                  |
-| VLAN 50   | 10.10.50.0/24   | Network Services       |
-| Branch 01 | 10.20.10.0/24   | Branch Users           |
-| Branch 02 | 10.30.10.0/24   | Branch Users           |
-| Loopbacks | 10.255.255.0/24 | Router IDs             |
-| P2P Links | 10.255.0.0/24   | Routing Infrastructure |
+| Segmento         | VLAN | Rede            | Finalidade                     |
+| ---------------- | ---: | --------------- | ------------------------------ |
+| Management       |   10 | 10.10.10.0/24   | Gerenciamento                  |
+| Usuários         |   20 | 10.10.20.0/24   | Usuários HQ                    |
+| Servidores       |   30 | 10.10.30.0/24   | Data Center                    |
+| Voz              |   40 | 10.10.40.0/24   | Telefonia IP                   |
+| Serviços de Rede |   50 | 10.10.50.0/24   | DNS/DHCP/NTP                   |
+| Filial 01        |  110 | 10.20.10.0/24   | Usuários                       |
+| Filial 02        |  120 | 10.30.10.0/24   | Usuários                       |
+| Loopbacks        |    — | 10.255.255.0/24 | Identificação dos equipamentos |
+| Links P2P        |    — | 10.255.0.0/24   | Infraestrutura de roteamento   |
 
-> The IPv4 addressing scheme is dedicated to the laboratory environment.
-
----
-
-# 🔢 Loopback Addressing
-
-| Device     | Loopback         |
-| ---------- | ---------------- |
-| R-CORE1    | 10.255.255.1/32  |
-| R-CORE2    | 10.255.255.2/32  |
-| R-EDGE1    | 10.255.255.3/32  |
-| R-BRANCH01 | 10.255.255.11/32 |
-| R-BRANCH02 | 10.255.255.12/32 |
+> As redes utilizadas neste projeto são destinadas exclusivamente ao laboratório.
 
 ---
 
-# 🧪 Laboratory Roadmap
+# 🔢 Endereçamento das Loopbacks
 
-## LAB-00 — Environment Preparation
+| Equipamento | Loopback         |
+| ----------- | ---------------- |
+| R-CORE1     | 10.255.255.1/32  |
+| R-CORE2     | 10.255.255.2/32  |
+| R-EDGE1     | 10.255.255.3/32  |
+| R-FILIAL01  | 10.255.255.11/32 |
+| R-FILIAL02  | 10.255.255.12/32 |
 
-Preparation of the PNETLab/EVE-NG environment.
+As loopbacks serão utilizadas principalmente para:
 
-Topics:
-
-* Device deployment
-* Hostname standardization
-* Management addressing
-* Loopback configuration
-* Basic device hardening
-
----
-
-## LAB-01 — VLAN & Inter-VLAN Routing
-
-Implementation of:
-
-* VLANs
-* Trunks
-* Access ports
-* SVIs
-* Inter-VLAN Routing
-* Basic segmentation
+* Router-ID;
+* BGP;
+* OSPF;
+* Gerenciamento;
+* Monitoramento;
+* Identificação dos equipamentos.
 
 ---
 
-## LAB-02 — OSPF
+# 🧪 Laboratórios
 
-Implementation of enterprise dynamic routing.
+## LAB-00 — Preparação do Ambiente
 
-Topics:
+Preparação da infraestrutura no PNETLab/EVE-NG.
 
-* OSPF Area 0
-* Router-ID
-* Neighbors
-* Loopback advertisement
-* Cost
-* Route selection
-* Convergence
-* Redundancy
+### Atividades
 
----
-
-## LAB-03 — BGP
-
-Enterprise connectivity with ISP.
-
-Topics:
-
-* eBGP
-* Autonomous Systems
-* Prefix Lists
-* Route Policies
-* Route Filtering
-* Local Preference
-* MED
-* AS Path
+* Criar os equipamentos.
+* Definir nomes dos dispositivos.
+* Configurar gerenciamento.
+* Configurar endereçamento.
+* Configurar loopbacks.
+* Realizar hardening básico.
+* Criar a documentação inicial.
 
 ---
 
-## LAB-04 — VRF
+# LAB-01 — VLAN e Inter-VLAN Routing
 
-Network segmentation using Virtual Routing and Forwarding.
+Implementação da segmentação da rede corporativa.
 
-Topics:
-
-* VRF creation
-* VRF interfaces
-* Independent routing tables
-* Route leaking
-* Traffic isolation
-
----
-
-## LAB-05 — Firewall
-
-Enterprise security architecture.
-
-Topics:
-
-* Security Zones
-* Firewall Policies
-* NAT
-* Objects
-* Services
-* Logging
-* Management Access
-* Least Privilege
-* Hardening
-
----
-
-## LAB-06 — SD-WAN & IPsec
-
-Enterprise WAN architecture connecting HQ and branches.
-
-Topics:
-
-* SD-WAN
-* IPsec VPN
-* Multiple WAN links
-* SLA monitoring
-* Application-based routing
-* Failover
-* Traffic steering
-
----
-
-## LAB-07 — Ansible
-
-Network automation.
-
-Objectives:
-
-* Inventory management
-* Device discovery
-* Configuration backup
-* Configuration deployment
-* Command execution
-* Templates
-* Variables
-* Ansible Vault
-
----
-
-## LAB-08 — Python
-
-Network automation using Python.
-
-Examples:
+### VLANs
 
 ```text
-Device Inventory
-       |
-       v
-Python
-       |
-+------+------+
-|             |
-SSH           API
-|             |
-Cisco       Firewall
-Huawei      SD-WAN
+VLAN 10  → Management
+VLAN 20  → Usuários
+VLAN 30  → Servidores
+VLAN 40  → Voz
+VLAN 50  → Serviços
 ```
 
-Automation examples:
+### Atividades
 
-* Interface validation
-* BGP status
-* OSPF neighbors
-* Device reachability
-* Configuration backup
-* Report generation
+* Criar VLANs.
+* Configurar portas Access.
+* Configurar Trunks.
+* Configurar SVI.
+* Configurar gateways.
+* Implementar Inter-VLAN Routing.
+* Validar conectividade.
+* Implementar segmentação.
 
 ---
 
-## LAB-09 — Terraform
+# LAB-02 — OSPF
 
-Infrastructure as Code.
+Implementação do protocolo OSPF no Core.
 
-Future implementations:
+### Objetivos
+
+* Configurar OSPF Area 0.
+* Definir Router-ID.
+* Estabelecer vizinhanças.
+* Anunciar loopbacks.
+* Analisar tabela de roteamento.
+* Trabalhar com custo OSPF.
+* Simular falhas.
+* Validar convergência.
+
+### Validações
+
+```text
+Vizinhança OSPF
+Tabela de rotas
+Estado das interfaces
+Reachability
+Convergência
+```
+
+---
+
+# LAB-03 — BGP
+
+Implementação de conectividade entre a empresa e um ISP.
+
+### Autonomous Systems
+
+```text
+Empresa → AS 65001
+ISP     → AS 65100
+```
+
+### Atividades
+
+* Configurar eBGP.
+* Anunciar prefixos corporativos.
+* Criar Prefix Lists.
+* Criar políticas de roteamento.
+* Filtrar rotas.
+* Trabalhar com Local Preference.
+* Trabalhar com AS Path.
+* Analisar tabela BGP.
+
+### Objetivo
+
+Implementar uma conexão com ISP seguindo boas práticas de segurança e controle de rotas.
+
+---
+
+# LAB-04 — VRF
+
+Implementação de segmentação utilizando VRF.
+
+### Objetivos
+
+* Criar VRFs.
+* Associar interfaces.
+* Criar tabelas de roteamento independentes.
+* Isolar ambientes.
+* Implementar Route Leaking quando necessário.
+* Validar isolamento entre redes.
+
+---
+
+# LAB-05 — Firewall
+
+Implementação da arquitetura de segurança.
+
+### Zonas
+
+```text
+             INTERNET
+                 |
+              UNTRUST
+                 |
+              FIREWALL
+          /       |       \
+      TRUST     SERVER    MGMT
+```
+
+### Tecnologias
+
+* FortiGate
+* Palo Alto
+
+### Atividades
+
+* Criar objetos.
+* Criar grupos de objetos.
+* Criar Security Policies.
+* Configurar NAT.
+* Configurar VPN.
+* Configurar logs.
+* Implementar regras de menor privilégio.
+* Implementar hardening.
+* Validar acessos permitidos e bloqueados.
+
+---
+
+# LAB-06 — SD-WAN + IPsec
+
+Implementação de uma arquitetura WAN corporativa.
+
+```text
+                       HQ
+                        |
+                 +------+------+
+                 |   SD-WAN   |
+                 +------+------+
+                    /       \
+                   /         \
+              INTERNET      MPLS
+                 /             \
+          FILIAL 01          FILIAL 02
+```
+
+### Atividades
+
+* Criar túneis IPsec.
+* Simular múltiplos links.
+* Configurar SLA.
+* Configurar failover.
+* Definir prioridade de aplicações.
+* Criar políticas de encaminhamento.
+* Simular falha de WAN.
+* Validar recuperação automática.
+
+---
+
+# LAB-07 — Ansible
+
+Automação da infraestrutura de rede.
+
+### Objetivos
+
+* Criar inventário.
+* Coletar informações.
+* Executar comandos.
+* Fazer backup.
+* Aplicar configurações.
+* Utilizar templates.
+* Utilizar variáveis.
+* Utilizar Ansible Vault.
+
+Estrutura:
+
+```text
+ansible/
+├── inventory/
+├── group_vars/
+├── host_vars/
+├── playbooks/
+└── templates/
+```
+
+---
+
+# LAB-08 — Python
+
+Automação utilizando Python.
+
+### Projetos
+
+```text
+Validação de interfaces
+       ↓
+Validação de BGP
+       ↓
+Validação de OSPF
+       ↓
+Teste de conectividade
+       ↓
+Backup de configuração
+       ↓
+Geração de relatório
+```
+
+---
+
+# LAB-09 — Terraform
+
+Implementação de Infrastructure as Code.
+
+### Ambientes
+
+```text
+terraform/
+├── aws/
+└── azure/
+```
+
+### Futuras implementações
 
 * AWS VPC
 * Azure VNet
 * Subnets
 * Routing
 * Security Groups
-* Network Security Groups
+* NSG
 * VPN
-* Cloud connectivity
+* Cloud Networking
 
 ---
 
-## LAB-10 — Monitoring
+# LAB-10 — Monitoramento
 
-Network observability.
+Implementação de observabilidade da infraestrutura.
 
-Technologies:
+### Ferramentas
 
 * Zabbix
 * Grafana
 * SNMP
 * Syslog
-* ICMP
-* Interface monitoring
-* CPU/Memory monitoring
-* BGP monitoring
-* OSPF monitoring
+
+### Monitoramento
+
+```text
+CPU
+Memória
+Interfaces
+Tráfego
+Latência
+Packet Loss
+BGP
+OSPF
+VPN
+Firewall
+Disponibilidade
+```
 
 ---
 
-# 📁 Repository Structure
+# 📁 Estrutura do Repositório
 
 ```text
 enterprise-network-netdevops-lab/
@@ -422,121 +542,118 @@ enterprise-network-netdevops-lab/
 
 ---
 
-# 🔄 NetDevOps Workflow
+# 🔄 Fluxo NetDevOps
 
-The project follows a simplified NetDevOps lifecycle:
+O projeto seguirá um ciclo de desenvolvimento semelhante ao utilizado em ambientes corporativos:
 
 ```text
-        DESIGN
-          |
-          v
-      DOCUMENT
-          |
-          v
-       DEVELOP
-          |
-          v
-        TEST
-          |
-          v
-       REVIEW
-          |
-          v
-        DEPLOY
-          |
-          v
-       MONITOR
-          |
-          v
-       IMPROVE
-          |
-          +------------+
-                       |
-                       v
-                    Git/GitHub
+              PROJETO
+                 |
+                 ↓
+           DOCUMENTAÇÃO
+                 |
+                 ↓
+            DESENVOLVIMENTO
+                 |
+                 ↓
+               TESTE
+                 |
+                 ↓
+              REVIEW
+                 |
+                 ↓
+              DEPLOY
+                 |
+                 ↓
+            MONITORAMENTO
+                 |
+                 ↓
+             MELHORIA
+                 |
+                 └──────────→ Git / GitHub
 ```
 
 ---
 
-# 🔐 Security Principles
+# 🔐 Segurança
 
-This project follows fundamental security principles:
+Este laboratório seguirá princípios de segurança como:
 
-* Least Privilege
-* Network Segmentation
-* Defense in Depth
-* Secure Management
-* Configuration Backup
-* Change Management
-* Logging and Monitoring
-* Secure Credential Management
-* Regular Hardening
-* Vulnerability Management
+* Princípio do menor privilégio.
+* Segmentação de rede.
+* Defesa em profundidade.
+* Gerenciamento seguro.
+* Controle de acesso.
+* Hardening.
+* Backup de configurações.
+* Monitoramento.
+* Gestão de vulnerabilidades.
+* Controle de mudanças.
 
-### ⚠️ Credentials
+## ⚠️ Credenciais
 
-**Never commit real credentials to this repository.**
+**Nunca inserir credenciais reais no GitHub.**
 
-Do not upload:
+Não publicar:
 
 ```text
-Passwords
-API Tokens
-Private Keys
-VPN PSKs
-SNMP Communities
-Cloud Credentials
-Production Configurations
-Customer Information
+Senhas
+Tokens
+Chaves privadas
+PSK de VPN
+Credenciais de Cloud
+SNMP Communities reais
+Configurações de produção
+Informações de clientes
 ```
 
-Use mechanisms such as:
+Utilizar:
 
 * Ansible Vault
 * GitHub Secrets
-* Environment Variables
-* Secure Credential Managers
+* Variáveis de ambiente
+* Cofres de credenciais
 
 ---
 
-# 📈 Future Improvements
+# 📈 Roadmap
 
-The laboratory will evolve continuously.
-
-Planned implementations:
-
+* [x] Arquitetura inicial
+* [x] Plano de endereçamento
+* [ ] LAB-00 — Preparação
+* [ ] LAB-01 — VLAN
+* [ ] LAB-02 — OSPF
+* [ ] LAB-03 — BGP
+* [ ] LAB-04 — VRF
+* [ ] LAB-05 — Firewall
+* [ ] LAB-06 — SD-WAN/IPsec
+* [ ] LAB-07 — Ansible
+* [ ] LAB-08 — Python
+* [ ] LAB-09 — Terraform
+* [ ] LAB-10 — Zabbix/Grafana
 * [ ] IPv6
 * [ ] MPLS L3VPN
 * [ ] Segment Routing
 * [ ] EVPN/VXLAN
-* [ ] BFD
-* [ ] QoS
-* [ ] Cisco SD-WAN
-* [ ] Fortinet SD-WAN
-* [ ] Palo Alto
 * [ ] Cisco ACI
-* [ ] Network APIs
 * [ ] RESTCONF
 * [ ] NETCONF
 * [ ] YANG
-* [ ] CI/CD
 * [ ] GitHub Actions
-* [ ] Automated testing
-* [ ] Zabbix
-* [ ] Grafana
-* [ ] AWS Networking
-* [ ] Azure Networking
+* [ ] CI/CD
+* [ ] Testes automatizados
 
 ---
 
-# 🎓 Skills Demonstrated
+# 🎓 Competências Demonstradas
 
-This project demonstrates practical knowledge in:
+Este projeto demonstra conhecimentos práticos em:
 
-**Network Engineering**
+### Engenharia de Redes
 
-* Enterprise Architecture
-* Routing & Switching
+* Arquitetura Enterprise
+* Routing
+* Switching
 * BGP
 * OSPF
 * MPLS
@@ -545,16 +662,18 @@ This project demonstrates practical knowledge in:
 * IPv4/IPv6
 * Network Design
 
-**Cybersecurity**
+### Segurança
 
-* Firewalls
-* Network Segmentation
+* Firewall
+* FortiGate
+* Palo Alto
+* NAT
 * VPN
+* Segmentação
 * Hardening
 * Security Policies
-* Secure Management
 
-**Automation**
+### Automação
 
 * Python
 * Ansible
@@ -565,24 +684,24 @@ This project demonstrates practical knowledge in:
 * CI/CD
 * NetDevOps
 
-**Operations**
+### Operação
 
-* Monitoring
+* Monitoramento
 * Troubleshooting
-* Documentation
-* Change Management
-* Configuration Management
+* Documentação
+* Controle de mudanças
+* Gerenciamento de configuração
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 Autor
 
-**André — Telecommunications & Network Engineer**
+**André — Engenheiro de Telecomunicações, Redes e TI**
 
-Focus areas:
+Áreas de atuação:
 
-* Enterprise Networks
-* Telecommunications
+* Engenharia de Redes
+* Telecomunicações
 * Network Architecture
 * Cybersecurity
 * SD-WAN
@@ -593,16 +712,16 @@ Focus areas:
 
 ---
 
-# ⭐ Project Status
+# 🚧 Status do Projeto
 
-🚧 **Under Development**
+**Em desenvolvimento**
 
-This laboratory is continuously evolving as new technologies, architectures and automation scenarios are implemented.
+Este laboratório será evoluído continuamente com novas arquiteturas, tecnologias, automações e cenários de troubleshooting.
 
 ---
 
-## Disclaimer
+## ⚠️ Aviso
 
-This repository is intended for educational, laboratory and portfolio purposes.
+Este projeto possui finalidade **educacional, de laboratório e portfólio profissional**.
 
-All configurations should be tested in an isolated environment before being considered for production use.
+Todas as configurações devem ser testadas em ambiente isolado antes de serem utilizadas em ambientes de produção.
